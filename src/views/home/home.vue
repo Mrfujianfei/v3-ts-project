@@ -1,5 +1,8 @@
 <template>
-  <div>homePage</div>
+  <div class="home">
+    <span class="test">homePage</span>
+    <span>demo1</span>
+  </div>
   <h1>{{ name }}</h1>
   <el-button type="danger">危险按钮</el-button>
   <button
@@ -27,3 +30,12 @@ export default defineComponent({
   },
 });
 </script>
+<style lang="less" scoped>
+.home {
+  color: red;
+
+  .test {
+    color: green;
+  }
+}
+</style>
