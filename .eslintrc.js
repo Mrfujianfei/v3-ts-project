@@ -13,7 +13,13 @@ module.exports = {
   plugins: ['vue', '@typescript-eslint', 'prettier'],
   rules: {
     'vue/no-multiple-template-root': 'off', // 解决template中最顶层只能返回一个元素的检测报错
-    'import/extensions': ['error', 'never'],
+    'import/extensions': [
+      'error',
+      'never',
+      {
+        vue: 'always',
+      },
+    ],
     'import/no-unresolved': [
       // 解决无法识别问题
       2,

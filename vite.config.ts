@@ -5,10 +5,9 @@ import { resolve } from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: './', // 开发公共基础路径
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'), // 设置 @ 指向 /src 目录
+      '@': resolve(__dirname, './src'), // 设置 @ 指向 /src 目录
       // '@components':resolve(__dirname,'src/components'),
       // '@pages':resolve(__dirname,'src/pages')
     },
