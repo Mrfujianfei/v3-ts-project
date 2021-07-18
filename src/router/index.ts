@@ -1,9 +1,9 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 
-import HomePage from '@/views/home/home';
-import Detail from '@/views/detail/detail';
+import HomePage from '../views/home/index.vue';
+import Detail from '../views/detail/index.vue';
 
-const NotFound = () => import('@/views/notFound/notFound'); // 动态导入
+const NotFound = () => import('../views/notFound/index.vue'); // 动态导入
 
 const routes: Array<RouteRecordRaw> = [
   {
