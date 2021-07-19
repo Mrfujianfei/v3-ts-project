@@ -1,8 +1,9 @@
 {
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --mode development",
     "build": "vue-tsc --noEmit && vite build",
+    "prebuild": "vue-tsc --noEmit && vite build --mode staging",
     "serve": "vite preview",
     "prepare": "husky install"
   },
@@ -20,6 +21,7 @@
     "@typescript-eslint/parser": "^4.28.3",
     "@vitejs/plugin-vue": "^1.2.4",
     "@vue/compiler-sfc": "^3.0.5",
+    "axios": "^0.21.1",
     "eslint": "^7.30.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
